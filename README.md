@@ -106,8 +106,8 @@ openclaw-tutorial/
 
 | 日期 | OpenClaw 任务 | 交付物 |
 |-----|---------------|--------|
-| 2/24 (一) | 深入 Skills 定制 | 高级 Skill |
-| 2/25 (二) | 多 Agent 配置 | Agent 配置文件 |
+| 2/24 (一) | [深入 Skills 定制](docs/day8-advanced-skills.md) | 高级 Skill |
+| 2/25 (二) | [多 Agent 配置](docs/day9-multi-agent.md) | Agent 配置文件 |
 | 2/26 (三) | Webhook/自动化 | 自动化配置 |
 | 2/27 (四) | 高级 Cron | 复杂定时任务 |
 | 2/28 (五) | 工作流优化 | 学习笔记 |
