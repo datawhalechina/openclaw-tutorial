@@ -1,0 +1,42 @@
+{
+  "// 注释": "Day 10 示例：GitHub PR/Issue 分诊机器人完整配置",
+  "// 使用前": "将 OPENCLAW_HOOKS_TOKEN 替换为你自己的密钥（openssl rand -hex 24 生成）",
+
+  "channels": {
+    "telegram": {
+      "token": "YOUR_TELEGRAM_BOT_TOKEN",
+      "allowFrom": ["your_telegram_id"]
+    },
+    "feishu": {
+      "appId": "YOUR_FEISHU_APP_ID",
+      "appSecret": "YOUR_FEISHU_APP_SECRET"
+    }
+  },
+
+  "agents": {
+    "list": [
+      { "id": "main", "workspace": "~/.openclaw/workspace" },
+      { "id": "hooks", "workspace": "~/.openclaw/workspace-hooks" }
+    ]
+  },
+
+  "hooks": {
+    "enabled": true,
+    "token": "your-secret-token-here",
+    "path": "/hooks",
+    "defaultSessionKey": "hook:github",
+    "allowRequestSessionKey": false,
+    "allowedSessionKeyPrefixes": ["hook:"],
+    "allowedAgentIds": ["main", "hooks"],
+    "mappings": [
+      {
+        "name": "github",
+        "action": "agent",
+        "agentId": "hooks",
+        "deliver": true,
+        "channel": "telegram",
+        "messageTemplate": "请对以下 GitHub 事件进行分诊：\n\n类型：{{action}} {{pull_request.title}}{{issue.title}}\n作者：{{pull_request.user.login}}{{issue.user.login}}\n仓库：{{repository.full_name}}\n链接：{{pull_request.html_url}}{{issue.html_url}}\n描述：{{pull_request.body}}{{issue.body}}"
+      }
+    ]
+  }
+}
