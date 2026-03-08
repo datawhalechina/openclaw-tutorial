@@ -1,0 +1,35 @@
+{
+  "feeds": [
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "description": "AI 工具、LLM 应用前沿，更新频繁"
+    },
+    {
+      "name": "Paul Graham",
+      "url": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+      "description": "创业与思维方式"
+    },
+    {
+      "name": "antirez",
+      "url": "http://antirez.com/rss",
+      "description": "Redis 作者，系统编程与技术思考"
+    },
+    {
+      "name": "Overreacted (Dan Abramov)",
+      "url": "https://overreacted.io/rss.xml",
+      "description": "React 核心作者，前端与编程哲学"
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "url": "https://mitchellh.com/feed.xml",
+      "description": "HashiCorp 创始人，系统与基础设施"
+    },
+    {
+      "name": "Gwern",
+      "url": "https://gwern.substack.com/feed",
+      "description": "AI 研究与深度技术分析"
+    }
+  ],
+  "max_articles_per_feed": 3
+}

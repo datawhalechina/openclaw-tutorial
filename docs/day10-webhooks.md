@@ -290,4 +290,4 @@ curl -X POST http://127.0.0.1:18789/hooks/github \
 
 ---
 
-[上一天：多 Agent 团队配置 ←](day9-multi-agent.md)
+[上一天：多 Agent 团队配置 ←](day9-multi-agent.md) | [下一天：高级 Cron 任务 →](day11-advanced-cron.md)
